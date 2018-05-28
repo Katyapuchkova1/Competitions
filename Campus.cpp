@@ -14,14 +14,14 @@ int main()
 	cout << "Write the kratny floor" << endl;
 	cin >> k;
 	cout << "Write the flat number " << endl;
-	cin >> n;
+	cin >> z;
 	blockflats = (k - 1) * y + x;
-	floorsbefore = n / blockflats * k;
-	blockfloor = ((n % blockflats) + y - 1) / y;
+	floorsbefore = z / blockflats * k;
+	blockfloor = ((z % blockflats) + y - 1) / y;
 	floor = blockfloor + floorsbefore;
 	if (floor > n)
 	{
-		floor = floor % 7;
+		floor = floor % n;
 	}
 
 	cout << floor << endl;
